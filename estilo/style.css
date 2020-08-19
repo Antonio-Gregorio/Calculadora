@@ -1,0 +1,67 @@
+/*
+    CSS em Objetos
+*/
+body {
+    background-image: linear-gradient(to right, rgb(28, 98, 145), rgb(0, 24, 34));
+}
+
+
+/*
+    CSS em Ids
+*/
+#site {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#calculadora {
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+
+/*
+    CSS em Classes
+*/
+.button {
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(to left, rgb(14, 77, 85), rgb(20, 150, 128));
+    color: rgb(233, 233, 233);
+    font-size: 25px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.button:hover {
+    background-image: linear-gradient(to left, rgb(24, 130, 145), rgb(27, 202, 173));
+    color: rgb(233, 233, 233);
+}
+
+.button:active {
+    background-image: linear-gradient(to left, rgb(7, 38, 43), rgb(9, 77, 65));
+        color: rgb(233, 233, 233);
+}
+
+.width {
+    width: 130px;
+}
+.height {
+    height: 130px;
+}
+.input {
+    margin: 5px;
+    width: 275px;
+    height: 60px;
+    font-size: 40px;
+    background-color: rgb(0, 0, 0, 0.4);
+    border: 0px;
+    color: rgb(20, 150, 128);
+    
+}

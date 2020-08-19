@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <!-- Importações -->
+    <link rel="shortcut icon" href="https://img.icons8.com/plasticine/100/000000/share.png">
+    <link rel="stylesheet" type="text/css" href="estilo/style.css">
+    <script src="config/config.js"></script>
+
+</head>
+<body>
+
+    <div id="site">
+        <div id="calculadora">
+
+            <table>
+                <tr>
+                    <th colspan="4">
+                        <input id="input" type="string" class="input" dir="rtl">
+                    </th>
+                </tr>
+                <tr>
+                    <th><button id="clear" class="button" onclick="limpar();" value="clean">C</button></th>
+                    <th><button id="divisão" class="button" onclick="addValue(this.value)" value="/">/</button></th>
+                    <th><button id="multiplicação" class="button" onclick="addValue(this.value)" value="*">x</button></th>
+                    <th><button id="subtração" class="button" onclick="addValue(this.value)" value="-">-</button></th>
+                </tr>
+                <tr>
+                    <th><button id="sete" class="button" onclick="addValue(this.value)" value="7">7</button></th>
+                    <th><button id="oito" class="button" onclick="addValue(this.value)" value="8">8</button></th>
+                    <th><button id="nove" class="button" onclick="addValue(this.value)" value="9">9</button></th>
+                    <th><button id="soma" class="button" onclick="addValue(this.value)" value="+">+</button></th>
+                </tr>
+                <tr>
+                    <th><button id="quatro" class="button" onclick="addValue(this.value)" value="4">4</button></th>
+                    <th><button id="cinco" class="button" onclick="addValue(this.value)" value="5">5</button></th>
+                    <th><button id="seis" class="button" onclick="addValue(this.value)" value="6">6</button></th>
+                    <th><button id="potenciação" class="button" onclick="addValue(this.value)" value="**">x²</button></th>
+                </tr>
+                <tr>
+                    <th><button id="um" class="button" onclick="addValue(this.value)" value="1">1</button></th>
+                    <th><button id="dois" class="button" onclick="addValue(this.value)" value="2">2</button></th>
+                    <th><button id="tres" class="button" onclick="addValue(this.value)" value="3">3</button></th>
+                    <th rowspan="2"><button id="resultado" class="button height" onclick="resultado()" value="==">=</button></th>
+                </tr>
+                <tr>
+                    <th colspan="2"><button id="zero" class="button width" onclick="addValue(this.value)" value="0">0</button></th>
+                    <th><button id="virgula" class="button" onclick="addValue(this.value)" value=",">,</button></th>
+                </tr>
+            </table>
+
+
+        </div>
+        <div id="rodape">
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
