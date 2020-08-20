@@ -1,45 +1,36 @@
 
-
-
 // Adicionar Valor 
 function addValue(value){
-    let res = document.getElementById("input").value;
-
-    if(true){
-        document.getElementById("input").value += value;
-    }else{
-
-    }
+    document.querySelector('input#input').value += value;
 }
 
 function resultado(){
-    let conta = document.getElementById("input").value;
-    let resultado = eval(conta)
+let conta = document.querySelector("input#input").value;
+let resultado = eval(conta)
 
-    document.getElementById('input').value = '';
-    document.getElementById('input').value = resultado;
+document.querySelector('input#input').value = '';
+document.querySelector('input#input').value = resultado;
 
-    if(resultado == undefined){
-        document.getElementById("input").value = "";
-    }
+if(resultado == undefined){
+    document.querySelector("input#input").value = "";
+}
 }
 
 function limpar(){
-    document.getElementById('input').value = '';
+document.querySelector('input#input').value = '';
 }
 
 function loopresultado(){
-    while(true){
-        let conta = document.getElementById("input").value;
-    let resultado = eval(conta)
+while(true){
+    let conta = document.querySelector('input#input').value;
+let resultado = eval(conta)
 
-    document.getElementById('input').value = '';
-    document.getElementById('input').value = resultado;
+document.querySelector('input#input').value = '';
+document.querySelector('input#input').value = resultado;
 
-    if(resultado == undefined){
-        document.getElementById("input").value = "";
-    }
-    }
+if(resultado == undefined){
+    document.querySelector('input#input').value = "";
+}
+}
 }
 
-loopresultado();
